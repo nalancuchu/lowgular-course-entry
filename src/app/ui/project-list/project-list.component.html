@@ -1,0 +1,6 @@
+<h1> {{ title }} </h1>
+<div *ngFor="let project of data$ | async">
+  <h3>{{ project.id }}. {{ project.name }}</h3>
+  Owner: {{project.owner}}<br>
+  Description: {{ project.description}}
+</div>
